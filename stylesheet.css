@@ -1,0 +1,65 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body, td, th, tr, p, a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.date {
+  color: #888;
+  font-size: 13px;
+}
+
+ul {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+li {
+  margin-bottom: 4px;
+}
