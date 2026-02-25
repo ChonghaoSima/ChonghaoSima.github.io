@@ -18,6 +18,11 @@
       max-height:300px; opacity:1; padding:6px 10px;
     }
     .bibtex pre { margin:0; white-space:pre-wrap; word-break:break-all; }
+    .rq-header {
+      font-size:15px; font-weight:bold; margin:0; padding-bottom:6px;
+      border-bottom:1px solid #ddd; color:#333;
+    }
+    .rq-header span { font-weight:normal; color:#666; font-size:13px; }
   </style>
 </head>
 
@@ -32,22 +37,28 @@
             <tbody>
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p class="name" style="text-align:center;">Chonghao Sima</p>
+                  <p class="name" style="text-align:center;">Chonghao Sima (司马崇昊)</p>
                   <p>
-                    I am a Ph.D. student in Computer Science at <a href="https://www.hku.hk/">The University of Hong Kong (HKU)</a>,
+                    Chonghao Sima is a Ph.D. student in Computer Science at <a href="https://www.hku.hk/">The University of Hong Kong (HKU)</a>,
                     working at <a href="https://mmlab.hk/">MMLab@HKU</a>, advised by
                     Prof. <a href="http://luoping.me/">Ping Luo</a> and Prof. <a href="https://lihongyang.info/">Hongyang Li</a>.
+                    He closely works with <a href="https://kashyap7x.github.io/">Kashyap Chitta</a> and Prof. <a href="https://www.cvlibs.net/">Andreas Geiger</a>.
+                    His research focuses on autonomous driving and embodied AI, spanning 3D perception, end-to-end planning, vision-language models for driving, and robot manipulation.
                   </p>
                   <p>
-                    My research focuses on autonomous driving and embodied AI, spanning 3D perception, end-to-end planning,
-                    vision-language models for driving, and robot manipulation.
-                    Previously, I was a Ph.D. student at <a href="https://www.purdue.edu/">Purdue University</a> (2019&ndash;2023)
+                    He received his B.S. from <a href="https://www.hust.edu.cn/">Huazhong University of Science and Technology</a> (2015&ndash;2019),
+                    then moved to the US to pursue his Ph.D. at <a href="https://www.purdue.edu/">Purdue University</a> (2019&ndash;2023)
                     with Prof. <a href="https://www.cs.purdue.edu/homes/yexiang/">Yexiang Xue</a>,
-                    and I received my B.S. from <a href="https://www.hust.edu.cn/">Huazhong University of Science and Technology</a> (2015&ndash;2019).
+                    before transferring to HKU in 2023.
+                    He has interned at <a href="https://research.nvidia.com/labs/av-applied-research/">NVIDIA Autonomous Vehicle Applied Research</a> with <a href="https://alvarezlopezjosem.github.io/">Dr. Jose M. Alvarez</a> and <a href="https://zhidingyu.github.io/">Dr. Zhiding Yu</a>,
+                    and at <a href="https://opendrivelab.com/">OpenDriveLab, Shanghai AI Lab</a>.
                   </p>
                   <p>
-                    I have interned at <a href="https://research.nvidia.com/labs/av-applied-research/">NVIDIA Autonomous Vehicle Applied Research</a> with <a href="https://alvarezlopezjosem.github.io/">Dr. Jose M. Alvarez</a> and <a href="https://zhidingyu.github.io/">Dr. Zhiding Yu</a>,
-                    and <a href="https://opendrivelab.com/">OpenDriveLab, Shanghai AI Lab</a>.
+                    He was a core contributor to <a href="https://arxiv.org/abs/2212.10156">UniAD</a>, which received the <strong>CVPR 2023 Best Paper Award</strong> (1/9155),
+                    and received <strong>Best Paper Finalist</strong> (29/4306) at IROS 2025 and <strong>Outstanding Reviewer</strong> (232/7000) at CVPR 2023.
+                    He won the <a href="https://waymo.com/open/challenges/2022/3d-camera-only-detection/?_gl=1*1uvo2f*_up*MQ..*_ga*MjEyOTI3MjU4Mi4xNzcxOTg1MDY5*_ga_KDWQB0N19R*czE3NzE5ODUwNjgkbzEkZzAkdDE3NzE5ODUwNjgkajYwJGwwJGgw">Waymo Open Challenge 2022</a>
+                    and hosted challenges at <a href="https://opendrivelab.com/challenge2024/">CVPR 2024 Autonomous Grand Challenge (DriveLM)</a> and <a href="https://opendrivelab.com/challenge2023/">CVPR 2023 Autonomous Driving Challenge (3D Occupancy Prediction)</a>.
+                    He holds 3 US patents, organizes workshops at CVPR and ICLR, and reviews for CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, ICRA, IROS, T-PAMI, and IJCV.
                   </p>
                   <p style="text-align:center">
                     <a href="mailto:chonghaosima@connect.hku.hk">Email</a> &nbsp;/&nbsp;
@@ -75,13 +86,18 @@
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h2>Publications</h2>
                   <p>
-                    <!-- My research focuses on autonomous driving and embodied AI, spanning 3D perception, end-to-end planning, -->
-                    <!-- vision-language models for driving, and robot manipulation.  -->
                     I believe in building benchmarks to accelerate the research cycle in the community, and a good module should be scalably applicable in real-world scenarios.
+                    My research addresses the <em>curse of reality</em> for physical agents &mdash; the challenge that the real world will always present conditions a model has never seen.
+                    I organize my work around four research questions spanning the perceive-reason-act loop:
+                  </p>
+                  <ul style="margin:4px 0 8px 0;padding-left:20px;line-height:1.6">
+                    <li><strong>Architecture:</strong> End-to-end systems with self-correction</li>
+                    <li><strong>Act:</strong> Robust policy deployment under distributional shift</li>
+                    <li><strong>Reason:</strong> LLM-grounded real-time planning</li>
+                    <li><strong>Perceive:</strong> Universal 3D representations</li>
+                  </ul>
+                  <p>
                     Some papers are <span class="highlight">highlighted</span>.
-                    <!-- <strong>C. Sima</strong> denotes <strong>Chonghao Sima</strong>.
-                    For the latest publications and citation statistics, see
-                    <a href="https://scholar.google.com/citations?user=dgYJ6esAAAAJ">Google Scholar</a>. -->
                   </p>
                 </td>
               </tr>
@@ -91,7 +107,78 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
-              <!-- ===== 2026 ===== -->
+              <!-- ===== Architecture ===== -->
+              <tr>
+                <td style="padding:20px 16px 0;" colspan="2">
+                  <p class="rq-header">Architecture <span>End-to-end systems with self-correction</span></p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:16px;width:25%;vertical-align:middle">
+                  <img src="images/robot_manip_real.png" alt="robot_manip" width="160" style="border-style:none">
+                </td>
+                <td style="padding:16px;width:75%;vertical-align:middle">
+                  <a href="https://openreview.net/pdf?id=Seb7rprW1Y">
+                    <span class="papertitle">Intelligent Robot Manipulation Requires Self-Directed Learning</span>
+                  </a>
+                  <br>
+                  Li Chen, <strong>Chonghao Sima</strong>, Kashyap Chitta, Antonio Loquercio, Ping Luo, Yi Ma, Hongyang Li
+                  <br>
+                  <em>Authorea Preprints</em>, 2025
+                  <br>
+                  <a href="https://openreview.net/pdf?id=Seb7rprW1Y">paper</a>
+                  /
+                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_robot')">bibtex</a>
+                  <div id="bib_robot" class="bibtex" style="display:none"><pre>@article{chen2025robot,
+  title={Intelligent Robot Manipulation Requires Self-Directed Learning},
+  author={Chen, Li and Sima, Chonghao and Chitta, Kashyap and Loquercio, Antonio and Luo, Ping and Ma, Yi and Li, Hongyang},
+  journal={Authorea Preprints},
+  year={2025}
+}</pre></div>
+                  <p></p>
+                  <p>This Perspective argues that achieving human-level dexterity requires transcending imitation learning in favor of self-directed learning, which enables autonomous improvement in environments lacking resets or explicit rewards. We propose a framework structured around goal identification, skill acquisition, and performance evaluation, leveraging cross-modal synergies to navigate these algorithmic challenges.</p>
+                </td>
+              </tr>
+
+              <tr bgcolor="#ffffd0">
+                <td style="padding:16px;width:25%;vertical-align:middle">
+                  <img src="images/uniad_real.jpg" alt="uniad" width="160" style="border-style:none">
+                </td>
+                <td style="padding:16px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2212.10156">
+                    <span class="papertitle">Planning-oriented Autonomous Driving</span>
+                  </a>
+                  <br>
+                  Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li,
+                  <strong>Chonghao Sima</strong>,
+                  Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li
+                  <br>
+                  <em>CVPR</em>, 2023 &nbsp; <font color="red"><strong>(Best Paper Award)</strong></font>
+                  <br>
+                  <a href="https://arxiv.org/abs/2212.10156">paper</a>
+                  /
+                  <a href="https://github.com/OpenDriveLab/UniAD">code</a>
+                  <img src="https://img.shields.io/github/stars/OpenDriveLab/UniAD?style=social" alt="GitHub stars" style="vertical-align:middle;margin-left:4px;height:16px">
+                  /
+                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_uniad')">bibtex</a>
+                  <div id="bib_uniad" class="bibtex" style="display:none"><pre>@inproceedings{hu2023uniad,
+  title={Planning-oriented Autonomous Driving},
+  author={Hu, Yihan and Yang, Jiazhi and Chen, Li and Li, Keyu and Sima, Chonghao and Zhu, Xizhou and Chai, Siqi and Du, Senyao and Lin, Tianwei and Wang, Wenhai and Lu, Lewei and Jia, Xiaosong and Liu, Qiang and Dai, Jifeng and Qiao, Yu and Li, Hongyang},
+  booktitle={CVPR},
+  year={2023}
+}</pre></div>
+                  <p></p>
+                  <p>A unified end-to-end framework that hierarchically integrates full-stack driving tasks&mdash;perception, prediction, and planning&mdash;under a planning-oriented philosophy, achieving state-of-the-art across all tasks on nuScenes.</p>
+                </td>
+              </tr>
+
+              <!-- ===== Act ===== -->
+              <tr>
+                <td style="padding:20px 16px 0;" colspan="2">
+                  <p class="rq-header">Act <span>Robust policy deployment under distributional shift</span></p>
+                </td>
+              </tr>
 
               <tr bgcolor="#ffffd0">
                 <td style="padding:16px;width:25%;vertical-align:middle">
@@ -126,9 +213,77 @@
                 </td>
               </tr>
 
-              <!-- ===== 2025 ===== -->
-
               <tr>
+                <td style="padding:16px;width:25%;vertical-align:middle">
+                  <img src="images/agibot_real.jpg" alt="agibot" width="160" style="border-style:none">
+                </td>
+                <td style="padding:16px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2503.06669">
+                    <span class="papertitle">AgiBot World Colosseo: A Large-Scale Manipulation Platform for Scalable and Intelligent Embodied Systems</span>
+                  </a>
+                  <br>
+                  AgiBot-World-Contributors, <strong>Chonghao Sima</strong>, et al
+                  <br>
+                  <em>IROS</em>, 2025 &nbsp; <font color="red"><strong>(Best Paper Finalist)</strong></font>
+                  <br>
+                  <a href="https://agibot-world.com/">project page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2503.06669">paper</a>
+                  /
+                  <a href="https://github.com/OpenDriveLab/AgiBot-World">code</a>
+                  <img src="https://img.shields.io/github/stars/OpenDriveLab/AgiBot-World?style=social" alt="GitHub stars" style="vertical-align:middle;margin-left:4px;height:16px">
+                  /
+                  <a href="https://opendrivelab.com/challenge2025/#agibot-world">challenge</a>
+                  /
+                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_agibot')">bibtex</a>
+                  <div id="bib_agibot" class="bibtex" style="display:none"><pre>@inproceedings{bu2025agibot_iros,
+  title={Agibot world colosseo: A large-scale manipulation platform for scalable and intelligent embodied systems},
+  author={Bu, Qingwen and Cai, Jisong and Chen, Li and Cui, Xiuqi and Ding, Yan and Feng, Siyuan and He, Xindong and Huang, Xu and others},
+  booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2025},
+  organization={IEEE}
+}</pre></div>
+                  <p></p>
+                  <p>AgiBot World aspires to transform large-scale robot learning and advance scalable robotic systems for production. This open-source platform invites researchers and practitioners to collaboratively shape the future of Embodied AI.</p>
+                </td>
+              </tr>
+
+              <tr bgcolor="#ffffd0">
+                <td style="padding:16px;width:25%;vertical-align:middle">
+                  <img src="images/centaur_real.jpg" alt="centaur" width="160" style="border-style:none">
+                </td>
+                <td style="padding:16px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2503.11650">
+                    <span class="papertitle">Centaur: Robust End-to-End Autonomous Driving with Test-Time Training</span>
+                  </a>
+                  <br>
+                  <strong>Chonghao Sima</strong>,
+                  Kashyap Chitta, Zhiding Yu, Shiyi Lan, Ping Luo, Andreas Geiger, Hongyang Li, Jose M. Alvarez
+                  <br>
+                  <em>arXiv preprint arXiv:2503.11650</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/abs/2503.11650">paper</a>
+                  /
+                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_centaur')">bibtex</a>
+                  <div id="bib_centaur" class="bibtex" style="display:none"><pre>@article{sima2024centaur,
+  title={Centaur: Robust End-to-End Autonomous Driving with Test-Time Training},
+  author={Sima, Chonghao and Chitta, Kashyap and Yu, Zhiding and Lan, Shiyi and Luo, Ping and Geiger, Andreas and Li, Hongyang and Alvarez, Jose M},
+  journal={arXiv preprint arXiv:2503.11650},
+  year={2025}
+}</pre></div>
+                  <p></p>
+                  <p>A test-time training framework for end-to-end driving that minimizes a novel Cluster Entropy uncertainty measure, improving planner robustness without hand-engineered rules or cost functions. Ranks 1st on the NAVSIM leaderboard at the time of submission.</p>
+                </td>
+              </tr>
+
+              <!-- ===== Reason ===== -->
+              <tr>
+                <td style="padding:20px 16px 0;" colspan="2">
+                  <p class="rq-header">Reason <span>LLM-grounded real-time planning</span></p>
+                </td>
+              </tr>
+
+              <tr bgcolor="#ffffd0">
                 <td style="padding:16px;width:25%;vertical-align:middle">
                   <img src="images/eta_real.png" alt="eta" width="160" style="border-style:none">
                 </td>
@@ -191,98 +346,6 @@
                   <p> DriveLM following work. A comprehensive benchmark evaluating the reliability of 12 VLMs for autonomous driving across 17 settings, revealing that current models often rely on textual cues rather than true visual grounding.</p>
                 </td>
               </tr>
-
-              <tr bgcolor="#ffffd0">
-                <td style="padding:16px;width:25%;vertical-align:middle">
-                  <img src="images/centaur_real.jpg" alt="centaur" width="160" style="border-style:none">
-                </td>
-                <td style="padding:16px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2503.11650">
-                    <span class="papertitle">Centaur: Robust End-to-End Autonomous Driving with Test-Time Training</span>
-                  </a>
-                  <br>
-                  <strong>Chonghao Sima</strong>,
-                  Kashyap Chitta, Zhiding Yu, Shiyi Lan, Ping Luo, Andreas Geiger, Hongyang Li, Jose M. Alvarez
-                  <br>
-                  <em>arXiv preprint arXiv:2503.11650</em>, 2025
-                  <br>
-                  <a href="https://arxiv.org/abs/2503.11650">paper</a>
-                  /
-                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_centaur')">bibtex</a>
-                  <div id="bib_centaur" class="bibtex" style="display:none"><pre>@article{sima2024centaur,
-  title={Centaur: Robust End-to-End Autonomous Driving with Test-Time Training},
-  author={Sima, Chonghao and Chitta, Kashyap and Yu, Zhiding and Lan, Shiyi and Luo, Ping and Geiger, Andreas and Li, Hongyang and Alvarez, Jose M},
-  journal={arXiv preprint arXiv:2503.11650},
-  year={2025}
-}</pre></div>
-                  <p></p>
-                  <p>A test-time training framework for end-to-end driving that minimizes a novel Cluster Entropy uncertainty measure, improving planner robustness without hand-engineered rules or cost functions. Ranks 1st on the NAVSIM leaderboard at the time of submission.</p>
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:16px;width:25%;vertical-align:middle">
-                  <img src="images/agibot_real.jpg" alt="agibot" width="160" style="border-style:none">
-                </td>
-                <td style="padding:16px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2503.06669">
-                    <span class="papertitle">AgiBot World Colosseo: A Large-Scale Manipulation Platform for Scalable and Intelligent Embodied Systems</span>
-                  </a>
-                  <br>
-                  AgiBot-World-Contributors, <strong>Chonghao Sima</strong>, et al
-                  <br>
-                  <em>IROS</em>, 2025 &nbsp; <font color="red"><strong>(Best Paper Finalist)</strong></font>
-                  <br>
-                  <a href="https://agibot-world.com/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2503.06669">paper</a>
-                  /
-                  <a href="https://github.com/OpenDriveLab/AgiBot-World">code</a>
-                  <img src="https://img.shields.io/github/stars/OpenDriveLab/AgiBot-World?style=social" alt="GitHub stars" style="vertical-align:middle;margin-left:4px;height:16px">
-                  /
-                  <a href="https://opendrivelab.com/challenge2025/#agibot-world">challenge</a>
-                  /
-                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_agibot')">bibtex</a>
-                  <div id="bib_agibot" class="bibtex" style="display:none"><pre>@inproceedings{bu2025agibot_iros,
-  title={Agibot world colosseo: A large-scale manipulation platform for scalable and intelligent embodied systems},
-  author={Bu, Qingwen and Cai, Jisong and Chen, Li and Cui, Xiuqi and Ding, Yan and Feng, Siyuan and He, Xindong and Huang, Xu and others},
-  booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  year={2025},
-  organization={IEEE}
-}</pre></div>
-                  <p></p>
-                  <p>AgiBot World aspires to transform large-scale robot learning and advance scalable robotic systems for production. This open-source platform invites researchers and practitioners to collaboratively shape the future of Embodied AI.</p>
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:16px;width:25%;vertical-align:middle">
-                  <img src="images/robot_manip_real.png" alt="robot_manip" width="160" style="border-style:none">
-                </td>
-                <td style="padding:16px;width:75%;vertical-align:middle">
-                  <a href="https://openreview.net/pdf?id=Seb7rprW1Y">
-                    <span class="papertitle">Intelligent Robot Manipulation Requires Self-Directed Learning</span>
-                  </a>
-                  <br>
-                  Li Chen, <strong>Chonghao Sima</strong>, Kashyap Chitta, Antonio Loquercio, Ping Luo, Yi Ma, Hongyang Li
-                  <br>
-                  <em>Authorea Preprints</em>, 2025
-                  <br>
-                  <a href="https://openreview.net/pdf?id=Seb7rprW1Y">paper</a>
-                  /
-                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_robot')">bibtex</a>
-                  <div id="bib_robot" class="bibtex" style="display:none"><pre>@article{chen2025robot,
-  title={Intelligent Robot Manipulation Requires Self-Directed Learning},
-  author={Chen, Li and Sima, Chonghao and Chitta, Kashyap and Loquercio, Antonio and Luo, Ping and Ma, Yi and Li, Hongyang},
-  journal={Authorea Preprints},
-  year={2025}
-}</pre></div>
-                  <p></p>
-                  <p>This Perspective argues that achieving human-level dexterity requires transcending imitation learning in favor of self-directed learning, which enables autonomous improvement in environments lacking resets or explicit rewards. We propose a framework structured around goal identification, skill acquisition, and performance evaluation, leveraging cross-modal synergies to navigate these algorithmic challenges.</p>
-                </td>
-              </tr>
-
-              <!-- ===== 2024 ===== -->
 
               <tr bgcolor="#ffffd0">
                 <td style="padding:16px;width:25%;vertical-align:middle">
@@ -352,102 +415,36 @@
                 </td>
               </tr>
 
-              <!-- ===== 2023 ===== -->
-
-              <tr bgcolor="#ffffd0">
-                <td style="padding:16px;width:25%;vertical-align:middle">
-                  <img src="images/occnet_real.jpg" alt="occnet" width="160" style="border-style:none">
-                </td>
-                <td style="padding:16px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2306.02851">
-                    <span class="papertitle">Scene as Occupancy</span>
-                  </a>
-                  <br>
-                  <strong>Chonghao Sima</strong>,
-                  Wenwen Tong, Tai Wang, Li Chen, Silei Wu, Hanming Deng, Yi Gu, Lewei Lu, Ping Luo, Dahua Lin, Hongyang Li
-                  <br>
-                  <em>ICCV</em>, 2023
-                  <br>
-                  <a href="https://arxiv.org/abs/2306.02851">paper</a>
-                  /
-                  <a href="https://github.com/OpenDriveLab/OccNet">code</a>
-                  <img src="https://img.shields.io/github/stars/OpenDriveLab/OccNet?style=social" alt="GitHub stars" style="vertical-align:middle;margin-left:4px;height:16px">
-                  /
-                  <a href="https://opendrivelab.com/challenge2024/#occupancy_and_flow">challenge 2024</a>
-                  /
-                  <a href="https://opendrivelab.com/challenge2023/#3d_occupancy_prediction">challenge 2023</a>
-                  /
-                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_occnet')">bibtex</a>
-                  <div id="bib_occnet" class="bibtex" style="display:none"><pre>@inproceedings{sima2023occnet,
-  title={Scene as Occupancy},
-  author={Sima, Chonghao and Tong, Wenwen and Wang, Tai and Chen, Li and Wu, Silei and Deng, Hanming and Gu, Yi and Lu, Lewei and Luo, Ping and Lin, Dahua and Li, Hongyang},
-  booktitle={ICCV},
-  year={2023}
-}</pre></div>
-                  <p></p>
-                  <p>A vision-centric 3D occupancy prediction framework that captures fine-grained scene geometry beyond bounding boxes, serving as a general representation for detection, segmentation, and planning on par with LiDAR-based methods.</p>
+              <!-- ===== Perceive ===== -->
+              <tr>
+                <td style="padding:20px 16px 0;" colspan="2">
+                  <p class="rq-header">Perceive <span>Universal 3D representations</span></p>
                 </td>
               </tr>
 
               <tr>
                 <td style="padding:16px;width:25%;vertical-align:middle">
-                  <img src="images/uniad_real.jpg" alt="uniad" width="160" style="border-style:none">
+                  <img src="images/openscene_real.jpg" alt="openscene" width="160" style="border-style:none">
                 </td>
                 <td style="padding:16px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2212.10156">
-                    <span class="papertitle">Planning-oriented Autonomous Driving</span>
+                  <a href="https://github.com/OpenDriveLab/OpenScene">
+                    <span class="papertitle">OpenScene: The Largest Up-to-Date 3D Occupancy Prediction Benchmark in Autonomous Driving</span>
                   </a>
                   <br>
-                  Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li,
-                  <strong>Chonghao Sima</strong>,
-                  Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li
+                  <strong>Chonghao Sima</strong> and OpenScene Contributors
                   <br>
-                  <em>CVPR</em>, 2023 &nbsp; <font color="red"><strong>(Best Paper Award)</strong></font>
-                  <br>
-                  <a href="https://arxiv.org/abs/2212.10156">paper</a>
+                  <a href="https://github.com/OpenDriveLab/OpenScene">github.com/OpenDriveLab/OpenScene</a>
+                  <img src="https://img.shields.io/github/stars/OpenDriveLab/OpenScene?style=social" alt="GitHub stars" style="vertical-align:middle;margin-left:4px;height:16px">, 2023
                   /
-                  <a href="https://github.com/OpenDriveLab/UniAD">code</a>
-                  <img src="https://img.shields.io/github/stars/OpenDriveLab/UniAD?style=social" alt="GitHub stars" style="vertical-align:middle;margin-left:4px;height:16px">
-                  /
-                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_uniad')">bibtex</a>
-                  <div id="bib_uniad" class="bibtex" style="display:none"><pre>@inproceedings{hu2023uniad,
-  title={Planning-oriented Autonomous Driving},
-  author={Hu, Yihan and Yang, Jiazhi and Chen, Li and Li, Keyu and Sima, Chonghao and Zhu, Xizhou and Chai, Siqi and Du, Senyao and Lin, Tianwei and Wang, Wenhai and Lu, Lewei and Jia, Xiaosong and Liu, Qiang and Dai, Jifeng and Qiao, Yu and Li, Hongyang},
-  booktitle={CVPR},
+                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_openscene')">bibtex</a>
+                  <div id="bib_openscene" class="bibtex" style="display:none"><pre>@misc{sima2023openscene,
+  title={OpenScene: The Largest Up-to-Date 3D Occupancy Prediction Benchmark in Autonomous Driving},
+  author={Sima, Chonghao and {OpenScene Contributors}},
+  howpublished={\url{https://github.com/OpenDriveLab/OpenScene}},
   year={2023}
 }</pre></div>
                   <p></p>
-                  <p>A unified end-to-end framework that hierarchically integrates full-stack driving tasks&mdash;perception, prediction, and planning&mdash;under a planning-oriented philosophy, achieving state-of-the-art across all tasks on nuScenes.</p>
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:16px;width:25%;vertical-align:middle">
-                  <img src="images/bev_devils_real.jpg" alt="bev_devils" width="160" style="border-style:none">
-                </td>
-                <td style="padding:16px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2209.05324">
-                    <span class="papertitle">Delving Into the Devils of Bird's-Eye-View Perception: A Review, Evaluation and Recipe</span>
-                  </a>
-                  <br>
-                  Hongyang Li, <strong>Chonghao Sima</strong>, et al
-                  <br>
-                  <em>T-PAMI</em>, 2023
-                  <br>
-                  <a href="https://arxiv.org/abs/2209.05324">paper</a>
-                  /
-                  <a href="https://github.com/OpenDriveLab/Birds-eye-view-Perception">code</a>
-                  <img src="https://img.shields.io/github/stars/OpenDriveLab/Birds-eye-view-Perception?style=social" alt="GitHub stars" style="vertical-align:middle;margin-left:4px;height:16px">
-                  /
-                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_bevdevils')">bibtex</a>
-                  <div id="bib_bevdevils" class="bibtex" style="display:none"><pre>@inproceedings{li2023bevdevils,
-  title={Delving Into the Devils of Bird's-Eye-View Perception: A Review, Evaluation and Recipe},
-  author={Li, Hongyang and Sima, Chonghao and Dai, Jifeng and Wang, Wenhai and Lu, Lewei and Wang, Huijie and Zeng, Jia and Li, Zhiqi and Yang, Jiazhi and Deng, Hanming and others},
-  booktitle={T-PAMI},
-  year={2023}
-}</pre></div>
-                  <p></p>
-                  <p>A comprehensive survey and practical toolbox for bird's-eye-view perception across camera, LiDAR, and fusion modalities, with a bag of tricks that achieved 1st place on the Waymo Open Challenge 2022 camera-based detection track.</p>
+                  <p>A compact redistribution of the large-scale nuPlan dataset, retaining only relevant annotations and sensor data at 2 Hz to reduce dataset size by over 10x. OpenScene spans 120+ hours of driving across Boston, Pittsburgh, Las Vegas, and Singapore with occupancy labels, and serves as the official dataset for the End-to-End Driving and Predictive World Model tracks at the CVPR 2024 and CVPR 2025 Autonomous Grand Challenges.</p>
                 </td>
               </tr>
 
@@ -517,6 +514,41 @@
                 </td>
               </tr>
 
+              <tr bgcolor="#ffffd0">
+                <td style="padding:16px;width:25%;vertical-align:middle">
+                  <img src="images/occnet_real.jpg" alt="occnet" width="160" style="border-style:none">
+                </td>
+                <td style="padding:16px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2306.02851">
+                    <span class="papertitle">Scene as Occupancy</span>
+                  </a>
+                  <br>
+                  <strong>Chonghao Sima</strong>,
+                  Wenwen Tong, Tai Wang, Li Chen, Silei Wu, Hanming Deng, Yi Gu, Lewei Lu, Ping Luo, Dahua Lin, Hongyang Li
+                  <br>
+                  <em>ICCV</em>, 2023
+                  <br>
+                  <a href="https://arxiv.org/abs/2306.02851">paper</a>
+                  /
+                  <a href="https://github.com/OpenDriveLab/OccNet">code</a>
+                  <img src="https://img.shields.io/github/stars/OpenDriveLab/OccNet?style=social" alt="GitHub stars" style="vertical-align:middle;margin-left:4px;height:16px">
+                  /
+                  <a href="https://opendrivelab.com/challenge2024/#occupancy_and_flow">challenge 2024</a>
+                  /
+                  <a href="https://opendrivelab.com/challenge2023/#3d_occupancy_prediction">challenge 2023</a>
+                  /
+                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_occnet')">bibtex</a>
+                  <div id="bib_occnet" class="bibtex" style="display:none"><pre>@inproceedings{sima2023occnet,
+  title={Scene as Occupancy},
+  author={Sima, Chonghao and Tong, Wenwen and Wang, Tai and Chen, Li and Wu, Silei and Deng, Hanming and Gu, Yi and Lu, Lewei and Luo, Ping and Lin, Dahua and Li, Hongyang},
+  booktitle={ICCV},
+  year={2023}
+}</pre></div>
+                  <p></p>
+                  <p>A vision-centric 3D occupancy prediction framework that captures fine-grained scene geometry beyond bounding boxes, serving as a general representation for detection, segmentation, and planning on par with LiDAR-based methods.</p>
+                </td>
+              </tr>
+
               <tr>
                 <td style="padding:16px;width:25%;vertical-align:middle">
                   <img src="images/sdf_real.jpg" alt="sdf" width="160" style="border-style:none">
@@ -546,31 +578,33 @@
 
               <tr>
                 <td style="padding:16px;width:25%;vertical-align:middle">
-                  <img src="images/openscene_real.jpg" alt="openscene" width="160" style="border-style:none">
+                  <img src="images/bev_devils_real.jpg" alt="bev_devils" width="160" style="border-style:none">
                 </td>
                 <td style="padding:16px;width:75%;vertical-align:middle">
-                  <a href="https://github.com/OpenDriveLab/OpenScene">
-                    <span class="papertitle">OpenScene: The Largest Up-to-Date 3D Occupancy Prediction Benchmark in Autonomous Driving</span>
+                  <a href="https://arxiv.org/abs/2209.05324">
+                    <span class="papertitle">Delving Into the Devils of Bird's-Eye-View Perception: A Review, Evaluation and Recipe</span>
                   </a>
                   <br>
-                  <strong>Chonghao Sima</strong> and OpenScene Contributors
+                  Hongyang Li, <strong>Chonghao Sima</strong>, et al
                   <br>
-                  <a href="https://github.com/OpenDriveLab/OpenScene">github.com/OpenDriveLab/OpenScene</a>
-                  <img src="https://img.shields.io/github/stars/OpenDriveLab/OpenScene?style=social" alt="GitHub stars" style="vertical-align:middle;margin-left:4px;height:16px">, 2023
+                  <em>T-PAMI</em>, 2023
+                  <br>
+                  <a href="https://arxiv.org/abs/2209.05324">paper</a>
                   /
-                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_openscene')">bibtex</a>
-                  <div id="bib_openscene" class="bibtex" style="display:none"><pre>@misc{sima2023openscene,
-  title={OpenScene: The Largest Up-to-Date 3D Occupancy Prediction Benchmark in Autonomous Driving},
-  author={Sima, Chonghao and {OpenScene Contributors}},
-  howpublished={\url{https://github.com/OpenDriveLab/OpenScene}},
+                  <a href="https://github.com/OpenDriveLab/Birds-eye-view-Perception">code</a>
+                  <img src="https://img.shields.io/github/stars/OpenDriveLab/Birds-eye-view-Perception?style=social" alt="GitHub stars" style="vertical-align:middle;margin-left:4px;height:16px">
+                  /
+                  <a href="javascript:void(0)" onclick="toggleBibtex('bib_bevdevils')">bibtex</a>
+                  <div id="bib_bevdevils" class="bibtex" style="display:none"><pre>@inproceedings{li2023bevdevils,
+  title={Delving Into the Devils of Bird's-Eye-View Perception: A Review, Evaluation and Recipe},
+  author={Li, Hongyang and Sima, Chonghao and Dai, Jifeng and Wang, Wenhai and Lu, Lewei and Wang, Huijie and Zeng, Jia and Li, Zhiqi and Yang, Jiazhi and Deng, Hanming and others},
+  booktitle={T-PAMI},
   year={2023}
 }</pre></div>
                   <p></p>
-                  <p>A compact redistribution of the large-scale nuPlan dataset, retaining only relevant annotations and sensor data at 2 Hz to reduce dataset size by over 10x. OpenScene spans 120+ hours of driving across Boston, Pittsburgh, Las Vegas, and Singapore with occupancy labels, and serves as the official dataset for the End-to-End Driving and Predictive World Model tracks at the CVPR 2024 and CVPR 2025 Autonomous Grand Challenges.</p>
+                  <p>A comprehensive survey and practical toolbox for bird's-eye-view perception across camera, LiDAR, and fusion modalities, with a bag of tricks that achieved 1st place on the Waymo Open Challenge 2022 camera-based detection track.</p>
                 </td>
               </tr>
-
-              <!-- ===== 2022 ===== -->
 
               <tr bgcolor="#ffffd0">
                 <td style="padding:16px;width:25%;vertical-align:middle">
@@ -607,7 +641,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr bgcolor="#ffffd0">
                 <td style="padding:16px;width:25%;vertical-align:middle">
                   <img src="images/bevformer_real.jpg" alt="bevformer" width="160" style="border-style:none">
                 </td>
@@ -641,9 +675,14 @@
                 </td>
               </tr>
 
-              <!-- ===== 2021 ===== -->
+              <!-- ===== Earlier Work ===== -->
+              <tr>
+                <td style="padding:20px 16px 0;" colspan="2">
+                  <p class="rq-header">Earlier Work</p>
+                </td>
+              </tr>
 
-              <tr bgcolor="#ffffd0">
+              <tr>
                 <td style="padding:16px;width:25%;vertical-align:middle">
                   <img src="images/lshsmile_real.jpg" alt="lshsmile" width="160" style="border-style:none">
                 </td>
