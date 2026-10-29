@@ -9,8 +9,10 @@ W, H = 320, 220
 
 # (filename, label, bg_color)
 papers = [
+    ("perturbot", "PerturBot", (90, 120, 160)),
     ("chi0", "χ₀", (100, 140, 180)),
     ("centaur", "Centaur", (160, 90, 90)),
+    ("flare", "FLARE", (140, 95, 130)),
     ("eta", "ETA", (90, 130, 100)),
     ("vlms_driving", "VLMs\nDriving", (130, 110, 160)),
     ("agibot", "AgiBot\nWorld", (170, 130, 70)),
